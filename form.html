@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="forms">
+      <img class="form" src="images/img10.jpeg" alt="" />
+      <form
+        class="form1"
+        style="display: flex; flex-direction: column"
+        action="https://formsubmit.co/chukwuedofrances@gmail.com"
+        method="POST"
+      >
+        <h1>Book Us</h1>
+        <input type="hidden" name="_subject" value="Makeup booking" />
+        <input
+          id="name"
+          type="name"
+          name="name"
+          placeholder="Enter Your name"
+          required
+        />
+        <input
+          id="address"
+          type="address"
+          name="address"
+          placeholder="Enter Your Address"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email Address"
+          required
+        />
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          placeholder="Enter Your phone number"
+          required
+        />
+        <textarea
+          name="text"
+          type="text"
+          placeholder="Add a brief description of your makeup"
+          id="text"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+        <button class="submit" type="submit" id="submit" onclick="sendAlert()">
+          Submit
+        </button>
+      </form>
+    </div>
+    <script>
+      function sendAlert() {
+        alert("Click ok to continue");
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
