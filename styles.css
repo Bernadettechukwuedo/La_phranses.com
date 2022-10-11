@@ -210,17 +210,10 @@ h2{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 500px
+    
+    text-align:center;
   }
-  .detail{
-    margin: 20px;
-  }
-  .last{
-    margin: 10px;
-  }
-  .copy{
-    margin: 30px
-  }
+ 
 @media screen and (max-width:720px){
     .first{
         font-size: 20px;
