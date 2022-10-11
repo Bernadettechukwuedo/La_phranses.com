@@ -304,6 +304,9 @@ footer{
 .copy{
     margin: 0px;
 }
+.chat{
+    display: none;
+}
   }
 
 
