@@ -18,19 +18,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script
-      src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"
-      style="width: 200px; height: 200px"
-    ></script>
-    <df-messenger
-      chat-title="Beauty"
-      agent-id="a49e7adc-9d1e-4b70-b6ad-58e244eed7aa"
-      language-code="en"
-    ></df-messenger>
   </head>
   <body>
     <div id="home-page">
-      <div class="first" id="home">
+      <div>
+        <img src="images/logo.png" alt="logo" style="width: 200px; height:
+        200px; margin-top: 7px"
+      </div>
+      <div class="first" id="home" style="margin-top: -10px">
         <h1>La Phranses Beauty</h1>
         <p>Makeup artist</p>
         <p>We give the best and quality makeup</p>
@@ -64,72 +59,86 @@
         </a>
       </div>
     </div>
-    <div id="services">
-      <marquee behavior="slide" direction="left" delay="60s">
-        <h2 class="top">Our Services</h2>
-        <p>We do different types of makeup such as:</p>
-        <ul>
-          <li>Simple makeup</li>
-          <li>Wedding makeup</li>
-          <li>Gele styling</li>
-        </ul>
 
-        <p>Come and experience the beauty of La Phranses</p>
-      </marquee>
+    <div id="services" style="margin: 20px">
+      <h2 class="top">Our Services</h2>
+      <p>We do different types of makeup such as:</p>
+      <ul>
+        <li>Simple makeup</li>
+        <li>Wedding makeup</li>
+        <li>Gele styling</li>
+      </ul>
+
+      <p>Come and experience the beauty of La Phranses</p>
     </div>
-    <div class="fourth" id="makeup">
-      <div class="contain">
-        <h2 style="text-align: center">Gallery/Our work</h2>
-        <img class="gal1" src="images/img5.jpg" alt="" />
-        <img class="gal1" src="images/img7.jpeg" alt="" />
-        <img class="gal2" src="images/wed2.jpeg" alt="" />
-        <img class="gal2" src="images/img9.jpeg" alt="" />
-        <img class="gal1" src="images/img8.jpeg" alt="" />
-        <img class="gal1" src="images/img11.jpeg" alt="" />
-        <img class="gal1" src="images/img4.jpg" alt="" />
-        <img class="gal2" src="images/wed1.jpeg" alt="" />
+
+    <div id="slideshow">
+      <h2 style="text-align: center">Gallery/Our work</h2>
+      <div class="slide-wrapper" id="makeup">
+        <!-- Define each of the slides
+       and write the content -->
+
+        <div class="slide">
+          <img class="gal1" src="images/img5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img class="gal1" src="images/img7.jpeg" alt="" />
+        </div>
+        <div class="slide">
+          <img class="gal2" src="images/wed2.jpeg" alt="" />
+        </div>
+        <div class="slide">
+          <img class="gal2" src="images/img9.jpeg" alt="" />
+        </div>
+        <div class="slide">
+          <img class="gal1" src="images/img8.jpeg" alt="" />
+        </div>
+        <div class="slide">
+          <img class="gal1" src="images/img11.jpeg" alt="" />
+        </div>
       </div>
     </div>
 
-    <div class="footer">
-      <div class="container">
+    <footer>
+      <div>
         <h2 style="color: black" class="detail">
-          For more information: <i class="fa fa-phone"></i> +447824026878
+          Let us bring out the beauty in you<!--<i class="fa fa-phone"></i> +447824026878-->
         </h2>
-        <marquee behavior="slide" direction="left" delay="60s">
-          <div class="last" id="contact">
-            <a href="https://instagram.com/la_phranses?igshid=YmMyMTA2M2Y=">
-              <i
-                class="fa fa-instagram"
-                style="color: red; font-size: 30px"
-              ></i>
-            </a>
-            <a href="https://m.youtube.com/c/LaFrances">
-              <i class="fa fa-youtube" style="color: red; font-size: 30px"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/chukwuedooguguafrances/?originalSubdomain=ng"
-            >
-              <i
-                class="fa fa-linkedin"
-                style="color: white; font-size: 30px; background-color: blue"
-              ></i>
-            </a>
-
-            <a href="#home-page">
-              <i
-                class="fas fa-arrow-alt-circle-up"
-                style="background-color: white; font-size: 30px"
-              ></i>
-            </a>
-          </div>
-        </marquee>
-        <marquee behavior="slide" direction="left" delay="60s">
-          <h2 class="detail" style="color: black; margin: 0px">
-            Designed by Bernadette
-          </h2>
-        </marquee>
       </div>
-    </div>
+      <div class="last" id="contact">
+        <a href="https://instagram.com/la_phranses?igshid=YmMyMTA2M2Y=">
+          <i class="fa fa-instagram" style="color: red; font-size: 30px"></i>
+        </a>
+        <a href="https://m.youtube.com/c/LaFrances">
+          <i class="fa fa-youtube" style="color: red; font-size: 30px"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/chukwuedooguguafrances/?originalSubdomain=ng"
+        >
+          <i
+            class="fa fa-linkedin"
+            style="color: white; font-size: 30px; background-color: red"
+          ></i>
+        </a>
+      </div>
+      <div>
+        <a class="bar5" href="#home"> <b> Home </b> </a>
+        <a class="bar5" href="#services"> <b> Services</b> </a>
+        <a class="bar5" href="#makeup"> <b> Makeup</b> </a>
+        <a class="bar5" href="#booking" target="_blank">
+          <b> Booking </b>
+        </a>
+        <a
+          class="bar5"
+          href="https://www.youtube.com/c/LaFrances"
+          target="_blank"
+        >
+          <b> Youtube</b>
+        </a>
+      </div>
+      <div class="copy">
+        <p>Copyright &copy; 2022 La Phranses Beauty. All Right Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>

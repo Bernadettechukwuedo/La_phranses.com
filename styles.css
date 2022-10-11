@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: antiquewhite;
+    background-color: rgb(118,118,118);
 }
 
 .first{
@@ -30,16 +30,20 @@ nav{
     display: grid;
     justify-content: center;
     align-content: center;
-    background-image: url("images/logo.png");
-    margin-top:20px;
-    width: auto;
-    height: 500px;
+    background-image: url("images/change.jpeg");
+    margin-top:70px;
+    width: cover;
+    height: 700px;
+    background-size: cover;
+    opacity:0.75;
+    background-repeat: no-repeat;
     
     
     
     
    
 }
+
 /* .third:hover{
     background-color: rgb(163,153,141);
 } */
@@ -48,13 +52,10 @@ nav{
     to {background-image:url("images/img10.jpeg");}
 } */
 @keyframes example {
-    0%   {background-image:url("images/logo.png");}
-    25%  {background-image:url("images/img10.jpeg");}
-    50%  {background-image:url("images/logo.png");}
-    75%  {background-image:url("images/img10.jpeg");}
-    100% {background-image:url("images/logo.png");}
+    from{background-image:url("images/change.jpeg");}
+    to  {background-image:url("images/change.jpeg");}
+
 }
-  
 button{
     width: 100px;
     height: 50px;
@@ -63,7 +64,7 @@ button{
     margin-top: 300px;
 }
 button:hover{
-    background-color:rgb(163,153,141);
+    background-color:rgb(184,112,96);
 }
 .fourth{
     
@@ -106,9 +107,9 @@ textarea{
     border:none;
     width:250px;
     padding:10px;
-    background-color:blue}
+    background-color:rgb(184,112,96)}
 .submit:hover{
-    background-color: red;
+    background-color:rgb(118,118,118);
 }
 .gal1{
     margin-top: 20px;
@@ -117,7 +118,7 @@ textarea{
 
 }
 .gal2{
-    width: 300px;
+    width: 350px;
     height: 400px;
 }
 img{
@@ -125,20 +126,97 @@ img{
 }
 .top{
     font-weight: bolder;
-    font-size:18px;
+    font-size:20px;
 }
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
-.footer{
+/* .footer{
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 50px;
     margin-left: 300px;
-}
+} */
 
+h2{
+    font-size: 20px;
+}
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 720px;
+    margin: 0 auto;
+    background-color:rgb(184,112,96)
+  }
+   
+  /* Style each of the sides
+  with a fixed width and height */
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+   
+  /* Add animation to the slides */
+  .slide-wrapper {
+     
+  /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(720px * 8);
+   
+  /* Specify the animation with the
+    duration and speed */
+    animation: slide 30s ease infinite;
+  }
+ 
+   
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+     
+  /* Calculate the margin-left for
+    each of the slides */
+    20% {
+      margin-left: 20px;
+    }
+   
+    40% {
+      margin-left: calc(-720px * 1);
+    }
+   
+    50% {
+      margin-left: calc(-720px * 2);
+    }
+   
+    60% {
+      margin-left: calc(-720px * 3);
+    }
+    70%{
+        margin-left: calc(-720px * 4);
+    }
+    10%{
+        margin-left: calc(-720px * 5);
+    }
+   
+  }
+  footer{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 500px
+  }
+  .detail{
+    margin: 20px;
+  }
+  .last{
+    margin: 10px;
+  }
+  .copy{
+    margin: 30px
+  }
 @media screen and (max-width:720px){
     .first{
         font-size: 20px;
@@ -155,6 +233,8 @@ a:active { text-decoration: none; }
   }
   .third{
     background-repeat: no-repeat;
+    width: 420px;
+    height:400px
    
 }
 .form{
@@ -195,10 +275,32 @@ img{
 }
 .detail{
     font-size: 18px;
+    margin: 0px;
+    
 }
-.footer{
+footer{
 
     margin: 50px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 420px;
+    margin: 0 auto;
+  }
+.gal1{
+    width:350px;
+    height: 400px;
 }
+.bar5{
+    margin: 5px;
+}
+
+.copy{
+    margin: 0px;
+}
+  }
+
+
+
