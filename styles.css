@@ -300,6 +300,9 @@ footer{
 .chat{
     display: none;
 }
+.head{
+    font-size: 35px;
+}
   }
 
 
