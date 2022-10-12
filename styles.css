@@ -364,4 +364,7 @@ footer{
 .topnav{
     display: flex;
 }
+.head{
+    font-size: 30px;
+}
 }
