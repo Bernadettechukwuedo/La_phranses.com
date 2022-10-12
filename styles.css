@@ -218,7 +218,7 @@ h2{
     text-align:center;
   }
  .topnav{
-    display: none;
+    
  }
 
 @media screen and (max-width:720px){
@@ -315,6 +315,7 @@ footer{
     overflow: hidden;
     background-color: #333;
     position: relative;
+    width:420px;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -324,7 +325,7 @@ footer{
   
   /* Style navigation menu links */
   .topnav a {
-    color:black;
+    color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
