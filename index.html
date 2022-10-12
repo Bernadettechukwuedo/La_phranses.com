@@ -20,12 +20,43 @@
     />
   </head>
   <body>
-    <div id="home-page">
-      <div>
-        <img src="images/logo.png" alt="logo" style="width: 200px; height:
-        200px; margin-top: 7px"
+    <div class="topnav">
+      <img
+        src="images/logo.png"
+        alt="logo"
+        style="width: 200px; height: 200px; margin-top: 7px"
+      />
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a class="bar1" href="#home"> <b> Home </b> </a>
+        <a class="bar2" href="#services"> <b> Services</b> </a>
+        <a class="bar3" href="#makeup"> <b> Makeup</b> </a>
+        <a class="bar4" href="#booking" target="_blank">
+          <b> Booking </b>
+        </a>
+        <a
+          class="bar6"
+          href="https://www.youtube.com/c/LaFrances"
+          target="_blank"
+        >
+          <b> Youtube</b>
+        </a>
+        <a class="bar5" href="#contact"> <b>Contact Us</b> </a>
       </div>
-      <div class="first" id="home" style="margin-top: -10px">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="home-page">
+      <div class="image">
+        <img
+          src="images/logo.png"
+          alt="logo"
+          style="width: 200px; height: 200px; margin-top: 7px"
+        />
+      </div>
+      <div class="first" id="home" style="margin-top: 70px">
         <h1 class="head">La Phranses Beauty</h1>
         <p>Makeup artist</p>
         <p>We give the best and quality makeup</p>
@@ -114,38 +145,34 @@
       </div>
       <div class="last" id="contact">
         <a href="https://instagram.com/la_phranses?igshid=YmMyMTA2M2Y=">
-          <i class="fa fa-instagram" style="color: red; font-size: 30px"></i>
+          <i class="fa fa-instagram" style="color: black; font-size: 30px"></i>
         </a>
         <a href="https://m.youtube.com/c/LaFrances">
-          <i class="fa fa-youtube" style="color: red; font-size: 30px"></i>
+          <i class="fa fa-youtube" style="color: black; font-size: 30px"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/chukwuedooguguafrances/?originalSubdomain=ng"
         >
           <i
             class="fa fa-linkedin"
-            style="color: white; font-size: 30px; background-color: red"
+            style="color: white; font-size: 30px; background-color: black"
           ></i>
         </a>
       </div>
-      <div>
-        <a class="bar5" href="#home"> <b> Home </b> </a>
-        <a class="bar5" href="#services"> <b> Services</b> </a>
-        <a class="bar5" href="#makeup"> <b> Makeup</b> </a>
-        <a class="bar5" href="#booking" target="_blank">
-          <b> Booking </b>
-        </a>
-        <a
-          class="bar5"
-          href="https://www.youtube.com/c/LaFrances"
-          target="_blank"
-        >
-          <b> Youtube</b>
-        </a>
-      </div>
+
       <div class="copy">
         <p>Copyright &copy; 2022 La Phranses Beauty. All Right Reserved</p>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
